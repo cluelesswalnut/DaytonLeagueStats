@@ -14,14 +14,14 @@ def sumStats(player, playerStatsDict, teamDict):
         playerStatsDict[player] = {}
         playerStatsDict[player]['wins'] = 0
         playerStatsDict[player]['loses'] = 0
-        playerStatsDict[player]['loses'] = 0
+        playerStatsDict[player]['ties'] = 0
         playerStatsDict[player]['nLeagues'] = 0
         playerStatsDict[player]['eachLeagueWins'] = []
         playerStatsDict[player]['eachLeagueLoses'] = []
         playerStatsDict[player]['eachLeagueTies'] = []
     playerStatsDict[player]['wins'] += int(teamDict['wins'])
     playerStatsDict[player]['loses'] += int(teamDict['loses'])
-    playerStatsDict[player]['loses'] += int(teamDict['ties'])
+    playerStatsDict[player]['ties'] += int(teamDict['ties'])
     playerStatsDict[player]['nLeagues'] += 1
     playerStatsDict[player]['eachLeagueWins'].append(int(teamDict['wins']))
     playerStatsDict[player]['eachLeagueLoses'].append(int(teamDict['loses']))
