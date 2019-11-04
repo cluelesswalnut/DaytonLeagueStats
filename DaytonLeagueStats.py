@@ -1,6 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
 
+page = requests.get("https://cincyultimate.org/profile/thomas-brewster")
+soup = BeautifulSoup(page.content, 'html.parser')
+
+leagues = soup.find_all("table", {"class":"table table-hover"})[1].find_all('a')
+
+leagues = [i['href'] for i in leagues]
+leagues = [i for i in leagues if "dayton" in i.lower()]
+print(leagues)
+
+
 page = requests.get("https://cincyultimate.org/leagues/2019-summer-dayton/teams")
 print(page.status_code)
 
