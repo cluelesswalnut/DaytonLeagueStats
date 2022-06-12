@@ -103,16 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# random files
-html.txt
-teamTableHtml.txt
-playerHtml.txt
-CaptianStatsFirst.txt
-DaytonLeaugeData.txt
-DaytonLeaugeDataFirst.txt
-PlayerStatsFirst.txt
-CaptianStats.txt
-CaptianStatsTable.txt
-PlayerStats.txt
+# output files
 PlayerStatsTable.txt
-DataTable.txt
+CaptainStatsTable.txt
+*.json
