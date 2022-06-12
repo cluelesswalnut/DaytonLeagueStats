@@ -1,4 +1,4 @@
-# This script scrapes the cincyultimate website and creates json with format:
+# This script scrapes the cincyultimate website and creates JSON with format:
 # { 
 #     "league name":
 #     {
